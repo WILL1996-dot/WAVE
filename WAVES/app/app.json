@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "WAVES",
+    "slug": "waves-social-app",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "waves",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.waves.social",
+      "bitcode": false
+    },
+    "android": {
+      "package": "com.waves.social",
+      "permissions": [
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.CAMERA",
+        "android.permission.INTERNET",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.WAKE_LOCK",
+        "android.permission.BLUETOOTH"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+      {
+        "image": "./assets/photos/splash-icon.png",
+        "imageWidth": 200,
+        "resizeMode": "contain",
+        "backgroundColor": "#101018"
+      }
+      ],
+      "@livekit/react-native-expo-plugin",
+      "@config-plugins/react-native-webrtc",
+      "expo-secure-store",
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": false
+    },
+    "extra": {
+      "eas": {
+        "projectId": "71755366-9113-4886-8807-35cc4e28a24a"
+      }
+    }
+  }
+}
